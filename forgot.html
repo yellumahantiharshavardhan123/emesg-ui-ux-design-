@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>E-MESG – Forgot Password</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+.gradient-bg {
+  background: linear-gradient(-45deg,#0f0f23,#1a1a2e,#16213e,#0f3460);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+.glass {
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.2);
+}
+@keyframes gradient {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+</style>
+</head>
+
+<body class="gradient-bg min-h-[100dvh] flex items-center justify-center px-4">
+
+<div class="w-full max-w-md">
+
+  <!-- Logo -->
+ <!-- Logo Section -->
+<div class="text-center mb-8 animate-fade-in">
+  <div class="inline-block animate-float">
+    <div
+      class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl neon-gradient flex items-center justify-center animate-glow relative overflow-hidden p-2"
+    >
+      <img
+        src="https://i.ibb.co/pjyBSHXP/IMG-.webp"
+        alt="E-MESG Logo"
+        class="w-full h-full object-contain rounded-xl"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+      />
+
+      <!-- Fallback text if logo fails -->
+      <div class="hidden text-white font-bold text-lg tracking-wider">
+        <span class="text-purple-200">E</span>
+        <span class="text-blue-200">-</span>
+        <span class="text-purple-200">MESG</span>
+      </div>
+
+      <!-- Online / Active indicator -->
+      <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+    </div>
+  </div>
+
+  <h1 class="text-2xl sm:text-3xl font-bold text-white mb-2">E-MESG</h1>
+  <p class="text-gray-300 text-sm">Smart Conversation Starts Here</p>
+</div>
+
+  <!-- Card -->
+  <div class="glass rounded-2xl p-6 sm:p-8">
+
+    <form class="space-y-4">
+      <input
+        type="email"
+        placeholder="Email or Phone"
+        required
+        class="w-full px-4 py-3 bg-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      />
+
+      <button
+        type="submit"
+        class="w-full py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium hover:scale-105 transition"
+      >
+        Send Reset Link
+      </button>
+    </form>
+
+    <div class="text-center mt-4">
+      <a href="login.html" class="text-sm text-purple-400 hover:text-purple-300">
+        ← Back to Login
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
